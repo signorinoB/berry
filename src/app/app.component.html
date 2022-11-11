@@ -1,4 +1,20 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+<div class="center-children-horizontally">
+  <div class="angular-img-wrapper">
+    <stuff [@bounce]="animationState"></stuff>
+  </div>
+</div>
+
+<div>
+  <button
+    mat-stroked-button
+    color="primary"
+    class="animate-btn"
+    (click)="animate()"
+  >
+    Animate it
+  </button>
+</div>
+
+<p>Start editing to see some magic happen :)</p>
