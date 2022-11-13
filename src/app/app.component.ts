@@ -16,4 +16,14 @@ export class AppComponent {
   animate() {
     this.animationState = !this.animationState;
   }
+
+  foo(o: any) {
+    console.log(o);
+
+    let baz: SVGAnimateMotionElement = <any>document.getElementById('baz');
+
+    console.log(baz);
+
+    console.log(baz.getCurrentTime());
+  }
 }
