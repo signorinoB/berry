@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { bounceAnimation } from 'angular-animations';
 
@@ -9,7 +9,6 @@ import { bounceAnimation } from 'angular-animations';
   animations: [bounceAnimation()],
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
 
   animationState = false;
 
@@ -18,6 +17,7 @@ export class AppComponent {
   }
 
   foo(o: any) {
+
     console.log(o);
 
     let baz: SVGAnimateMotionElement = <any>document.getElementById('baz');
